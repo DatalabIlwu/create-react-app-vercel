@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.coupon-div {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 2px solid black;
+  -webkit-mask: radial-gradient(circle at center top, black 30px,  transparent 131px ) top,
+    radial-gradient(circle at center bottom, transparent 30px, black 31px) bottom;
+  -webkit-mask-size: 100% 51%; /* each one half the size */
+  -webkit-mask-repeat: no-repeat; /* don't forget this */
+}
+
+
+.test {
+  width: 200px;
+  height: 200px;
+  /* background-color: brown; */
+  background: radial-gradient(circle at center top, transparent 30px,  black 31px );
+}
+
+svg {
+  width:  auto;
+  height: auto;
+}
+
+.pathQWQ {
+  /* fill: none; */
+  stroke: #646464;
+  stroke-width: 1px;
+  /* stroke-dasharray: 2,2; */
+  /* stroke-linejoin: round; */
+}
+
+#example_1 {
+  filter: 
+    drop-shadow(-1px -1px 0px #3e68ff) 
+    drop-shadow(1px -1px 0px #3e68ff) 
+    drop-shadow(1px 1px 0px #3e68ff)
+    drop-shadow(-1px 1px 0px #3e68ff)
+}
+
+.coupon-product-info-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.coupon-discount-info-container {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #3e68ff;
+}
